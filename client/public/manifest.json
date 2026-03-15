@@ -1,0 +1,38 @@
+{
+  "short_name": "Smart Farm",
+  "name": "Smart Terrace Farming System",
+  "description": "Monitor your terrace farm, crops, soil and get recommendations",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#16a34a",
+  "background_color": "#f0fdf4",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
+```
+
+---
+
+## If it DOES NOT exist — create it
+
+Create a new file at exactly this path:
+```
+client/public/manifest.json
+```
+And paste the JSON above into it.
+
+---
+
+## Your `client/public/` folder should look like this:
+```
+client/public/
+├── index.html       ✅ already have this
+├── manifest.json    ✅ create or update this
+├── _redirects       ✅ create this (fixes Netlify 404)
+├── robots.txt       ✅ optional
+└── favicon.ico      ✅ optional (React default)
