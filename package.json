@@ -1,0 +1,16 @@
+{
+  "name": "smart-terrace-farming",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "node scripts/dev.js",
+    "start": "node server/server.js",
+    "build": "cd client && npm run build",
+    "seed": "node server/db/seed.js",
+    "setup": "npm run install:all && npm run seed"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
